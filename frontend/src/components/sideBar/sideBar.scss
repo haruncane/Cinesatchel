@@ -1,0 +1,40 @@
+.sideBar {
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    top: 0;
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        padding-top: 10px;
+    }
+
+    hr {
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border-color: var(--main-color);
+    }
+
+    .buttons {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+
+        .dashboardBtn {
+            background-color: var(--main-color);
+            color: white;
+            width: 200px;
+            height: 75px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border-color: var(--main-color);
+            font-size: 25px;
+            font-family: 'Bahnschrift';  
+            text-align: center;
+        }
+    }
+}

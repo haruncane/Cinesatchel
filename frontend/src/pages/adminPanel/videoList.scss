@@ -1,0 +1,37 @@
+.videoList {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+    display: flex;
+    overflow: hidden;
+
+    .left {
+        height: 100%;
+    }
+    
+    .right {
+        width: 90%;
+        height: 100%;
+        
+        .updateBtn {
+            width: 75px;
+            height: 30px;
+            font-family: 'Bahnschrift'; 
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            border-color: green;
+            margin-right: 25px;
+        }
+
+        .deleteBtn {
+            width: 75px;
+            height: 30px;
+            font-family: 'Bahnschrift'; 
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            border-color: red;
+        }
+    }
+}

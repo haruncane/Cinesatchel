@@ -1,0 +1,48 @@
+.profileCard {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .deleteIcon {
+        display: none;
+        width: 35px;
+        height: 35px;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        .deleteIcon {
+            display: flex;
+        }
+    }
+    
+    .profileBox {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        label {
+            font-family: 'Bahnschrift';
+            font-size: 20px;
+            color: var(--main-color);
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .profileIcon {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            color: var(--main-color);
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.updateVideo {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+    display: flex;
+    overflow: auto;
+
+    .left {
+        height: 100%;
+    }
+
+    .right {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        .currentVideo {
+            height: 250px;
+            width: 97%;
+            display: flex;
+            margin: 25px;
+            border: 2.5px solid;
+            border-color: black;
+
+
+            .thumbnail {
+                width: 150px;
+                height: 200px;
+                margin: 25px;
+                border: 1px solid;
+                border-color: white;
+            }
+
+            .information {
+                height: 200px;
+                margin-top: 25px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                column-gap: 15px;
+                row-gap: 5px;
+                
+                span {
+                    font-family: 'Bahnschrift'; 
+                    color: white;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .updateInfoInputs {
+            height: 500px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            column-gap: 30px;
+            row-gap: 25px;
+
+            label {
+                font-size: 25px;
+                font-family: 'Bahnschrift'; 
+                color: white;
+            }
+
+            input {
+                font-size: 25px;
+                font-family: 'Bahnschrift'; 
+                color: black;
+                border-radius: 5px;
+                border-color: white;
+                margin: 1px;
+            }
+        
+            .categorySelect {
+                background-color: white;
+                border-radius: 5px;
+                display: inline-block;
+                font-size: 30px;
+                font-family: 'Bahnschrift'; 
+            }
+            
+            .formatSelect {
+                background-color: white;
+                border-radius: 5px;
+                display: inline-block;
+                font-size: 30px;
+                font-family: 'Bahnschrift'; 
+            }           
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+            justify-items: center;
+
+            .updateVideoBtn {
+                margin-right: 50px;
+                background-color: black;
+                color: white;
+                width: 250px;
+                height: 50px;
+                border-radius: 10px;
+                border-color: var(--main-color);
+                font-size: 20px;
+                font-family: 'Bahnschrift'; 
+                border-color: black;
+            }
+        }
+    }
+}

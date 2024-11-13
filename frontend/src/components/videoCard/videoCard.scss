@@ -1,0 +1,203 @@
+.videoCard {
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    //margin-right: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    //background-image: url(../../utils/contents/lotr/lotrCover.jpg);
+    background-size: cover;
+
+    .hoverBox {
+        display: none;
+        width: 300px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        overflow: hidden;
+
+        .buttons {
+            width: 300px;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            
+            .hoverIcons {
+                color: var(--main-color);
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &:hover {
+        .hoverBox {
+            display: flex;
+        }
+    }
+
+    .preInfo {
+        width: 275px;
+        padding-left: 15px;
+        padding-top: 2.5px;
+        padding-right: 15px;
+        background-color: black;
+        font-family: 'Bahnschrift'; 
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+
+    .modal {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+
+        .overlay {
+            width: 50%;
+            height: 99%;
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            
+            .modalContent {
+                display: flex;
+                flex-direction: column;
+
+                .closeModal{
+                    height: 28px;
+                    background-color: lightgray;
+                    font-family: 'Bahnschrift';
+                    border: 3px solid;
+                    border-color: black;
+                    border-radius: 8px;
+                }
+                
+                .videoLabel {
+                    width: 75%;
+                    margin-top: 5%;
+                    margin-bottom: 2.5%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: var(--main-color);
+                    font-family: 'Bahnschrift'; 
+                    font-size: 35px;
+                }
+                
+                hr {
+                    width: 90%;
+                    height: 2.5px;
+                    background-color: white;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                .videoDescription {
+                    p {
+                        font-family: 'Bahnschrift'; 
+                        color: white;
+                        font-size: 20px;
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                .videoModalInfo {
+                    display: flex;
+                    justify-content: space-between;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(7, 1fr);
+                    column-gap: 15px;
+                    row-gap: 5px;
+                    margin-left: 55px;
+                    
+                    label {
+                        font-family: 'Bahnschrift';
+                        font-size: 20px;
+                        color: white;
+                    }
+
+                }
+
+                .trailerNrating {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .trailerBtn {
+                        font-family: 'Bahnschrift';
+                        font-size: 25px;
+                        background-color: var(--main-color);
+                        border-color: var(--main-color);
+                        color: white;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        margin-left: 50px;
+                        width: 200px;
+                    }
+
+                    select {
+                        background-color: black;
+                        color: white;
+                        border-radius: 5px;
+                        padding: 5px;
+                        width: 200px;
+                        font-size: 20px;
+                        font-family: 'Bahnschrift'; 
+                        margin-right: 50px;
+                    }
+                }
+
+                .relatedVideos {
+                    h3 {
+                        margin-left: 5%;
+                        font-family: 'Bahnschrift';
+                        font-size: 25px;
+                        color: var(--main-color);
+                    }
+
+                    hr {
+                        width: 90%;
+                        height: 2.5px;
+                        background-color: white;
+                        border: none;
+                        border-radius: 5px;
+                        margin-bottom: 35px;
+                    }
+                }
+
+                .similarArea {
+                    h3 {
+                        margin-left: 5%;
+                        font-family: 'Bahnschrift';
+                        font-size: 25px;
+                        color: var(--main-color);
+                    }
+
+                    hr {
+                        width: 90%;
+                        height: 2.5px;
+                        background-color: white;
+                        border: none;
+                        border-radius: 5px;
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+    }
+}

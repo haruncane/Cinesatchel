@@ -1,0 +1,88 @@
+.accountDetails {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    .container {
+        background-color: var(--main-color);
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Bahnschrift'; 
+        display: flex;
+        flex-direction: column;
+
+        .top {
+            padding-top: 150px;
+            padding-left: 50px;
+            padding-right: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            .accountTitle {
+                font-size: 35px;
+                color: white;
+            }
+
+            .mamberSince {
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+            }
+        }
+
+        hr {
+            width: 95%;
+            height: 5px;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .mid {
+            padding-left: 100px;
+            padding-right: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 50px;
+            font-size: 20px;
+        }
+
+        .bot {
+            margin-top: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 75px;
+            
+            .profilesBtn {
+                font-family: 'Bahnschrift'; 
+                font-size: 20px;
+                color: black;
+                background-color: white;
+                border-color: white;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .deleteAccountBtn {
+                font-family: 'Bahnschrift'; 
+                font-size: 20px;
+                color: black;
+                background-color: white;
+                border-color: white;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+            }
+        } 
+    }
+}
